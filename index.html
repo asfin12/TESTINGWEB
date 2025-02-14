@@ -331,14 +331,14 @@
                 console.log("Mengirim data:", formData); // Debugging
 
                 // Kirim email dengan EmailJS
-                emailjs.send("service_eba09ya", "template_1sdq1ci", formData)
+                emailjs.send("service_eba09ya", "template_6z2qjiv", formData)
                     .then(response => {
                         console.log("SUCCESS!", response);
-                        alert("Email berhasil dikirim!");
+                        alert("Email sent successfully!");
                     })
                     .catch(error => {
                         console.error("FAILED...", error);
-                        alert("Gagal mengirim email. Cek console untuk detail.");
+                        alert("Failed to send email. Check console for details.");
                     });
             });
         })();
